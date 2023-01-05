@@ -1,0 +1,27 @@
+//Rolan Jay P. Samonte
+//BSCS 1-B
+
+#include <stdio.h>
+
+//1 for Prime, 0 for Composite
+int i, j, x;
+int prime(int num) {
+    for(i = 2; i < num; i++) {
+        for (j = 2; j < num; j++) {
+            x = i * j;
+            if (x == num) {
+                return 0;
+            }
+        }
+    }
+    return 1;
+}
+
+int main() {
+    int y;
+    printf("What is the number? ");
+    scanf("%d", &y);
+    printf("%d", prime(y));
+
+    return 0;
+}
