@@ -1,0 +1,39 @@
+//Rolan Jay P. Samonte
+//BSCS 1-B
+
+#include <stdio.h>
+int N, i, j;
+int Upper_Half(int N) {
+    int array[N][N];
+    printf("Write the elements: ");
+    for (i = 0; i < N; i++) {
+        for (j = 0; j < N; j++) {
+            scanf("%d", &array[i] [j]); 
+        }
+    }
+    for (i = 0; i < N; i++) {
+        for (j = 0; j < N; j++) {
+            printf("%d ", array[i] [j]);
+        }
+        printf("\n");
+    }
+    printf("\n");
+    for (i = 0; i < N; i++) {
+        for (j = 0; j < N; j++) {
+            if (i <= N && j < i) {
+                printf("  ");
+            }
+            else {
+                printf("%d ", array[i] [j]);
+            }
+        }
+        printf("\n");
+    }
+}
+
+int main () {
+    int n;
+    printf("How many rows and columns? ");
+    scanf("%d", &n);
+    Upper_Half(n);
+}
