@@ -1,0 +1,21 @@
+//Rolan Jay P. Samonte
+//BSCS 1-B
+
+#include <stdio.h>
+int i;
+int facto_rec(int num) {
+    if (num >= 1) {
+        return num * facto_rec(num-1);
+    }
+    else {
+        return 1;
+    }
+}
+
+int main () {
+    int x, y;
+    printf("Enter number: ");
+    scanf("%d", &x);
+    y = facto_rec(x);
+    printf("Answer is: %d", y); 
+}
