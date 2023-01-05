@@ -1,0 +1,26 @@
+//Rolan Jay P. Samonte
+//BSCS 1-B
+
+#include <stdio.h>
+
+int x, y;
+float z;
+float f(x) {
+    z = 2.3 * x;
+    return z;
+}
+
+int g(x, y) {
+    z = x * y;
+    return z;
+}
+
+int main() {
+    int a, b;
+    printf("Enter x value: ");
+    scanf("%d", &a);
+    printf("Enter y value: ");
+    scanf("%d", &b);
+    printf("f(x) = %f \n", f(a));
+    printf("g(y) = %d", g(a, b));
+}
