@@ -1,0 +1,29 @@
+//Rolan Jay P. Samonte
+//BSCS 1-B
+
+#include <stdio.h>
+
+int a, b, bigger;
+
+int lcm(a, b) {
+    if (a > b) {
+        bigger = a;
+    }
+    else {
+        bigger = b;
+    }
+    while (1) {
+        if ((bigger%a == 0) && (bigger%b == 0)) {
+            return bigger;
+        }
+        bigger++;
+    }
+}
+
+int main () {
+    int x, y, z;
+    printf("Enter two integers: \n");
+    scanf("%d %d", &x, &y);
+    z = lcm(x, y);
+    printf("LCD is: %d", z);
+}
